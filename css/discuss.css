@@ -1,0 +1,86 @@
+.look-t {
+  border-bottom: none;
+}
+.middle-t {
+  width: 7.5rem;
+  margin-left: -0.35rem;
+}
+.middle-t > img {
+  width: 100%;
+}
+
+/* 话题系列 */
+.middle-b {
+  position: relative;
+  width: 6.75rem;
+}
+.title-scroll {
+  width: 6.75rem;
+  height: 5vh;
+  overflow: auto;
+}
+.dis-title {
+  width: 10rem;
+}
+.dis-title > div {
+  float: left;
+  width: 2rem;
+}
+.dis-title span {
+  display: block;
+  width: 2rem;
+  padding-bottom: 0.1rem;
+  font-size: 0.3rem;
+}
+.b-line {
+  width: 0.5rem;
+  height: 2px;
+  display: none;
+  margin-left: 0.25rem;
+  background-color: #000;
+}
+.main {
+  display: block;
+}
+/* more-box */
+.dis-more {
+  width: 6.48rem;
+  margin: 0 auto;
+  overflow: auto;
+  height: 60vh;
+  display: none;
+  padding-bottom: 0.7rem;
+}
+.more-box > .dis-more:first-child {
+  display: block;
+}
+.dis-more p,
+.dis-more span {
+  display: block;
+  font-size: 0.3rem;
+}
+.more-card {
+  box-shadow: 0 0 1px 4px rgba(201, 199, 199, 0.3);
+  border-radius: 0.2rem;
+  margin-bottom: 0.4rem;
+  padding: 0.2rem 0.2rem;
+}
+.more-card > div:nth-child(2) > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.moreCard-b > div,
+.moreCard-b > div > span {
+  float: left;
+  margin-right: 0.1rem;
+  color: rgba(163, 162, 162, 0.801);
+}
+.moreCard-b > div {
+  margin-right: 0.2rem;
+}
+.fouse {
+  color: #000;
+}

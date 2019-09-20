@@ -1,0 +1,45 @@
+.wrap {
+  width: 7.5rem;
+}
+header {
+  background-color: rgba(219, 217, 217, 0.575);
+}
+header > .inner {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+header input {
+  border: none;
+  border-radius: 0.1rem;
+  width: 6.75rem;
+  padding: 0.1rem;
+  background-color: rgba(155, 151, 151, 0.801);
+}
+.sec-t {
+  width: 7.5rem;
+  margin-left: -0.375rem;
+  padding-bottom: 0.3rem;
+}
+.sec-t > img {
+  width: 100%;
+  display: block;
+}
+.sec-style > div:first-child > p {
+  font-size: 0.4rem;
+  line-height: 0.8rem;
+}
+.sec-style > div > div {
+  width: 30%;
+  float: left;
+}
+.sec-style > div > div img {
+  display: block;
+  width: 100%;
+}
+.style-pic {
+  margin-bottom: 0.4rem;
+}
+.style-pic > div:nth-child(2) {
+  margin: 0 4%;
+}

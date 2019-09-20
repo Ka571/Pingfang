@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>house3 city</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/left.css" />
+    <link rel="stylesheet" href="./../css/house3.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="head-Top inner">
+          <div>
+            <span class="back iconfont icon-left"></span>
+          </div>
+          <div>
+            <p>房子在哪个城市？</p>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="btn">
+          <button class="next">确认</button>
+        </div>
+      </section>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      $(".back").tap(function() {
+        history.go(-1);
+      });
+      $(".next").tap(function() {
+        event.preventDefault();
+        location.href = "./house4.html";
+      });
+    </script>
+  </body>
+</html>

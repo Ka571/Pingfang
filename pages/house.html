@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>house</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/right.css" />
+    <link rel="stylesheet" href="./../css/x.css" />
+    <link rel="stylesheet" href="./../css/house.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="inner">
+          <div class="house-x">
+            <span class="back iconfont icon-x"></span>
+          </div>
+          <div class="house-p">
+            <p>房子的户型是？</p>
+            <p>不包括客厅、厨房、餐厅和洗手间</p>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="inner">
+          <ul>
+            <li class="clearfix">
+              <span>一室</span>
+              <span class="iconfont icon-right"></span>
+            </li>
+            <li class="clearfix">
+              <span>二室</span>
+              <span class="iconfont icon-right"></span>
+            </li>
+            <li class="clearfix">
+              <span>三室</span>
+              <span class="iconfont icon-right"></span>
+            </li>
+            <li class="clearfix">
+              <span>四室</span>
+              <span class="iconfont icon-right"></span>
+            </li>
+            <li class="clearfix">
+              <span>五室</span>
+              <span class="iconfont icon-right"></span>
+            </li>
+            <li class="clearfix">
+              <span>五室以上</span>
+              <span class="iconfont icon-right"></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      $(".back").tap(function() {
+        history.go(-1);
+      });
+      $(".icon-right").tap(function() {
+        location.href = "./house2.html";
+      });
+    </script>
+  </body>
+</html>

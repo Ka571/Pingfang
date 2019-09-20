@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>article</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/article.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="head inner clearfix">
+          <div>
+            <span class="back">关闭</span>
+          </div>
+          <div>
+            <span>保存</span>
+            <span>预览</span>
+            <span>发布</span>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="inner">
+          <div class="arti-bgi">
+            <div class="inner"></div>
+          </div>
+          <form action="#">
+            <input type="text" placeholder="请输入标题" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="请输入正文"
+            ></textarea>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      $(".back").tap(function() {
+        history.go(-1);
+      });
+    </script>
+  </body>
+</html>

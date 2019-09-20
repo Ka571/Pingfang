@@ -1,0 +1,51 @@
+header span {
+  font-size: 0.3rem;
+  display: block;
+}
+header > .inner > div {
+  float: left;
+  padding: 0.2rem 0;
+  display: flex;
+  align-items: center;
+}
+header > .inner > div:first-child > span {
+  float: left;
+  margin-right: 0.15rem;
+}
+header > .inner > div:last-child {
+  float: right;
+}
+.back {
+  color: rgb(53, 176, 171);
+}
+.xiala {
+  margin-top: 0.1rem;
+}
+.big-pic {
+  width: 7.5rem;
+  margin-left: -0.375rem;
+  position: relative;
+}
+.big-pic > img {
+  display: block;
+  width: 100%;
+}
+.big-pic .label {
+  background-color: #33713c;
+  font-size: 0.3rem;
+  display: block;
+  border-radius: 0.1rem;
+  color: aliceblue;
+  padding: 0.1rem 0.2rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.pic-article {
+  text-align: center;
+  padding-top: 2rem;
+}
+.pic-article > p {
+  font-size: 0.3rem;
+}

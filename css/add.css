@@ -1,0 +1,72 @@
+.wrap {
+  background-color: rgb(53, 176, 171);
+}
+.add-t > div > span {
+  font-size: 0.3rem;
+  color: rgba(227, 227, 228, 0.938);
+}
+.add-t > div {
+  width: 50%;
+  float: left;
+}
+.add-t > div:last-child {
+  text-align: right;
+}
+section {
+  padding: 0.3rem 0 2rem 0;
+}
+.addSec-pic > img {
+  width: 100%;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 2px 2px rgba(80, 70, 70, 0.849);
+}
+.addSec-p {
+  padding-bottom: 2.2rem;
+}
+.addSec-p > div {
+  float: left;
+  width: 80%;
+}
+.addSec-p > div > span {
+  font-size: 0.32rem;
+  display: block;
+  color: rgba(227, 227, 228, 0.938);
+}
+.addSec-p > div:last-child {
+  text-align: right;
+  width: 20%;
+}
+.addSec-p > div:last-child > span {
+  position: relative;
+  right: 0;
+  font-size: 0.22rem;
+  padding: 0.1rem 0.15rem;
+  border-radius: 0.1rem;
+  background-color: rgba(224, 52, 9, 0.825);
+}
+.addSec-picX > div {
+  float: left;
+  width: 22%;
+  margin: 0 5%;
+}
+.addSec-picX > div > a {
+  font-size: 0.2rem;
+  text-align: center;
+  color: #eee;
+  display: block;
+}
+.addSec-picX > div > a > img {
+  display: block;
+  width: 100%;
+}
+footer {
+  padding: 1.3rem 0 0 0;
+}
+footer > .inner > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer > .inner > div img {
+  width: 1rem;
+}

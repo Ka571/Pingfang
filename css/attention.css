@@ -1,0 +1,86 @@
+.wrap {
+  background-color: rgba(236, 235, 235, 0.884);
+}
+.search {
+  padding-bottom: 0.5rem;
+}
+
+.att-more > div:first-child > span {
+  float: left;
+  line-height: 0.6rem;
+  font-size: 0.3rem;
+  display: block;
+}
+.att-more > div:first-child > span:last-child {
+  font-size: 0.25rem;
+  color: rgb(126, 126, 126);
+  float: right;
+}
+.att-pic {
+  overflow: auto;
+}
+.att-pic > div {
+  width: 14rem;
+}
+.att-pic > div > img {
+  float: left;
+  margin-right: 0.3rem;
+  display: block;
+  width: 2.5rem;
+}
+
+section {
+  padding-bottom: 0.8rem;
+  width: 7.5rem;
+  height: 60vh;
+  overflow: auto;
+}
+
+.middle1 p,
+.middle1 span {
+  display: block;
+  font-size: 0.3rem;
+}
+.middle1 span {
+  padding: 0.3rem 0;
+}
+.middle1 .attSecPic > img {
+  display: block;
+  width: 0.5rem;
+  float: left;
+  margin-right: 0.4rem;
+  position: relative;
+  top: 0.27rem;
+}
+.middle1 .attSecP {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.middle1 .attSecMaxpic > img {
+  width: 100%;
+}
+.middle1 .attSecIcon > div {
+  float: left;
+  width: 50%;
+}
+.middle1 .attSecIcon .attStyle > div,
+.middle1 .attSecIcon .attStyle > div span {
+  float: left;
+  margin-right: 0.1rem;
+}
+.middle1 .attSecIcon .attStyle > div span {
+  margin-right: 0.1rem;
+}
+.attSecIcon span {
+  padding: 0;
+  line-height: 0.8rem;
+}
+.attSecCollect > .clickAgain {
+  color: rgb(241, 134, 34);
+}
+.attSecLike > .clickAfter {
+  color: rgb(5, 70, 114);
+}

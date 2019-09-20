@@ -1,0 +1,27 @@
+header {
+  background-color: rgb(53, 176, 171);
+}
+.back {
+  color: aliceblue;
+  font-size: 0.5rem;
+}
+.house-p {
+  text-align: center;
+  padding: 0.6rem 0 2.4rem 0;
+}
+.house-p > p {
+  font-size: 0.4rem;
+  color: rgba(215, 217, 219, 0.877);
+}
+section ul > li {
+  padding: 0.2rem;
+}
+section ul > li > span {
+  font-size: 0.3rem;
+  display: block;
+  float: left;
+}
+section ul > li > span:last-child {
+  float: right;
+  color: rgb(53, 176, 171);
+}

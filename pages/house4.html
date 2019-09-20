@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>house4 money</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/left.css" />
+    <link rel="stylesheet" href="./../css/house4.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="head-Top inner">
+          <div>
+            <span class="back iconfont icon-left"></span>
+          </div>
+          <div>
+            <p>装修一共花了多少钱</p>
+            <p>包括硬装和软装，不包括家电</p>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="inner">
+          <div class="main clearfix">
+            <span class="numNow">0.00</span>
+            <span>平米</span>
+          </div>
+          <div class="math">
+            <div class="clearfix">
+              <div><span>1</span></div>
+              <div><span>2</span></div>
+              <div><span>3</span></div>
+            </div>
+            <div class="clearfix">
+              <div><span>4</span></div>
+              <div><span>5</span></div>
+              <div><span>6</span></div>
+            </div>
+            <div class="clearfix">
+              <div><span>7</span></div>
+              <div><span>8</span></div>
+              <div><span>9</span></div>
+            </div>
+            <div class="clearfix">
+              <div><span>.</span></div>
+              <div><span>0</span></div>
+              <div class="clearNum"><span>清除</span></div>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="next">确认</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      $(".back").tap(function() {
+        history.go(-1);
+      });
+      var num = "";
+      $(".math>div>div").tap(function() {
+        var clickNum = $(this)
+          .children("span")
+          .text();
+        num += clickNum;
+        $(".numNow").text(num);
+      });
+      $(".clearNum").tap(function() {
+        $(".numNow").text((0).toFixed(2));
+      });
+    </script>
+  </body>
+</html>

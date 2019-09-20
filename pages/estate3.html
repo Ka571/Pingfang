@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>estate</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css">
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/estate.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="wrap-innrer">
+        <p class="clearclick">你现在的装修状态</p>
+        <ul>
+          <li class="estate clearclick">
+            <span>暂无装修计划</span>
+          </li>
+          <li class="estate clearclick">
+            <span>准备装修</span>
+          </li>
+          <li class="estate clearclick">
+            <span>正在装修</span>
+          </li>
+          <li class="estate clearclick">
+            <span>已经入住</span>
+          </li>
+        </ul>
+        <button class="estate-btn">下一步</button>
+      </div>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      $(".estate-btn").tap(function() {
+        location.href = "./commend4.html";
+      });
+    </script>
+  </body>
+</html>

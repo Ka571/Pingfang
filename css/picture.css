@@ -1,0 +1,56 @@
+.wrap {
+  background-color: rgba(201, 194, 194, 0.74);
+}
+header span {
+  font-size: 0.3rem;
+  display: block;
+}
+header > .inner > div {
+  float: left;
+  padding: 0.2rem 0;
+  display: flex;
+  align-items: center;
+}
+header > .inner > div:first-child > span {
+  float: left;
+  margin-right: 0.15rem;
+}
+.back {
+  color: rgb(53, 176, 171);
+}
+header > .inner > div:last-child {
+  float: right;
+}
+.xiala {
+  margin-top: 0.1rem;
+}
+
+.big-pic {
+  width: 7.5rem;
+  margin-left: -0.375rem;
+  position: relative;
+}
+.big-pic > img {
+  display: block;
+  width: 100%;
+}
+.big-pic .amplify {
+  width: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.pic-mill > div > img {
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 0.1rem 0.1rem 0 0;
+}
+.pic-mill > div > img:last-child {
+  padding: 0.1rem 0 0 0;
+}
+.pic-mill > div {
+  width: 7.5rem;
+  margin-left: -0.375rem;
+}

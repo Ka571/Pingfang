@@ -1,0 +1,243 @@
+header {
+  background-image: url("./../images/fix1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 27vh;
+}
+header > .inner > div > span {
+  display: block;
+  color: rgb(209, 207, 207);
+  font-size: 0.6rem;
+}
+header > .inner {
+  position: relative;
+}
+header > .inner > div {
+  position: absolute;
+  border-radius: 50%;
+  top: 5vh;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.19);
+}
+header > .inner > div:nth-child(2) {
+  left: 6.1rem;
+}
+header > .inner > span {
+  display: block;
+  color: rgb(209, 207, 207);
+  font-size: 0.4rem;
+  padding: 3rem 0 0 0;
+}
+section {
+  background-color: #efeff4;
+  width: 7.5rem;
+  height: 60vh;
+  overflow: auto;
+}
+.fix-secText > p {
+  font-size: 0.3rem;
+  line-height: 0.4rem;
+  padding: 0.4rem 0;
+}
+.fix-more span,
+.fix-more a,
+.boxDa span {
+  display: block;
+  font-size: 0.3rem;
+}
+.fix-more > span {
+  float: left;
+}
+.fix-more {
+  padding: 0.2rem;
+}
+.fix-more > a {
+  color: #000;
+  font-size: 0.26rem;
+  float: right;
+}
+.boxDa > div {
+  float: left;
+  margin: 0.2rem;
+  width: 5rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 2px 2px #999;
+}
+.boxXiao {
+  width: 6.75rem;
+  overflow: auto;
+}
+.boxDa {
+  width: 11rem;
+}
+
+.card-pic {
+  border-radius: 0.2rem;
+}
+.card-pic img {
+  width: 100%;
+  height: 3rem;
+}
+.fix-secExpress > div {
+  padding: 0.2rem;
+}
+.card-text,
+.card-name {
+  padding-left: 0.2rem;
+}
+.card-name {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0 0.3rem 0.2rem;
+}
+.card-name > img {
+  width: 0.6rem;
+  float: left;
+  display: block;
+  margin-right: 0.3rem;
+}
+/* 住友都在聊 */
+.fix-secDiscuss p,
+.fix-secDiscuss span {
+  font-size: 0.3rem;
+}
+.discuss-text > span {
+  float: left;
+  font-weight: bold;
+  display: block;
+}
+.discuss-text > span:last-child {
+  float: right;
+  font-weight: normal;
+  font-size: 0.26rem;
+}
+.discuss-cardBox {
+  border-radius: 0.2rem;
+  box-shadow: 0 0 2px 2px #999;
+  margin: 0.1rem;
+}
+.discuss-cardBox > .card:first-child {
+  border-bottom: 1px solid #999;
+}
+.card-t > p {
+  font-weight: bold;
+  font-size: 0.3rem;
+
+  padding: 0.2rem;
+}
+.card-b-l {
+  width: 70%;
+  padding: 0.2rem;
+  float: left;
+}
+.card-b-l p {
+  font-size: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.card-b-pic {
+  width: 20%;
+  float: left;
+  padding: 0.4rem 0 0 0;
+}
+.card-b-pic > img {
+  width: 100%;
+}
+.card-span > div {
+  float: left;
+  margin-right: 0.15rem;
+}
+.card-span > div > span {
+  display: block;
+  float: left;
+  margin-right: 0.1rem;
+}
+.fix-secPic > div:first-child {
+  padding: 0.25rem 0;
+}
+.fix-secPic > div:first-child > span {
+  float: left;
+  font-size: 0.3rem;
+  display: block;
+}
+.fix-secPic > div:first-child > span:last-child {
+  float: right;
+  font-size: 0.3rem;
+  display: block;
+}
+.pic-rbig > div {
+  float: left;
+  width: 80%;
+  padding-right: 0.3rem;
+  border-radius: 0.2rem;
+}
+.pic-rbig img {
+  width: 100%;
+}
+.pic-rbig > div:last-child {
+  padding: 0;
+  width: 20%;
+}
+.pic-mill > div {
+  border-radius: 0.2rem;
+}
+.fix-secRead {
+  padding: 0.3rem 0;
+}
+.fix-secRead > div span,
+.fix-secRead > div p {
+  font-size: 0.3rem;
+  display: block;
+}
+.fix-secRead > div:first-child {
+  padding: 0 0 0.3rem 0;
+}
+.fix-secRead > div:first-child > span {
+  float: left;
+}
+.fix-secRead > div:first-child > span:last-child {
+  float: right;
+}
+.read-card > div:first-child {
+  padding: 0.2rem;
+}
+.read-text > p {
+  font-weight: bold;
+}
+.read-card {
+  box-shadow: 0 0 4px 2px #999;
+  border-radius: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+.readCard > div {
+  float: left;
+  width: 30%;
+  padding-left: 0.2rem;
+}
+.readCard > div:last-child {
+  width: 70%;
+}
+.re-card-pic img {
+  width: 100%;
+}
+.read-Text {
+  padding-left: 0.4rem;
+}
+.readCard .read-Text span {
+  font-size: 0.25rem;
+}
+.read-span > div {
+  float: left;
+  margin-right: 0.2rem;
+}
+.read-span > div > span {
+  float: left;
+  margin-right: 0.1rem;
+}
+.read-span {
+  position: relative;
+  top: 0.45rem;
+}

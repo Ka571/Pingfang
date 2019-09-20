@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>picture3</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/left.css" />
+    <link rel="stylesheet" href="./../css/jia.css" />
+    <link rel="stylesheet" href="./../css/right.css" />
+    <link rel="stylesheet" href="./../css/picture3.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="inner clearfix">
+          <div>
+            <span class="back iconfont icon-left"></span>
+            <span>发布图片</span>
+          </div>
+          <div>
+            <span class="next">发布</span>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="inner">
+          <div class="textarea">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="说说关于这张图片的故事吧"
+            ></textarea>
+            <div class="area-card">
+              <span>添加标签</span>
+              <div class="clearfix area-img">
+                <div><img src="./../images/show2.jpg" alt="" /></div>
+                <div><img src="./../images/show5_08.jpg" alt="" /></div>
+                <div><span class="iconfont icon-jia"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="mes">
+            <div class="bottom-t clearfix">
+              <div>
+                <span>关联商品</span>
+              </div>
+              <div class="clearfix">
+                <span>未选择</span>
+                <span class="iconfont icon-right"></span>
+              </div>
+            </div>
+            <div class="bottom-b clearfix">
+              <div>
+                <span>本内容由我原创</span>
+              </div>
+              <div class="click">
+                <span class="bg"></span>
+                <span class="move"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      $(".back").tap(function() {
+        history.go(-1);
+      });
+
+      var a = true;
+      $(".move").tap(function() {
+        var moveLeft = $(this).css("left");
+        if (a) {
+          $(this).css("left", "0");
+          a = false;
+        } else {
+          $(this).css("left", "0.3rem");
+          a = true;
+        }
+      });
+    </script>
+  </body>
+</html>

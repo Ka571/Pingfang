@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>attntion</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/head.css" />
+    <link rel="stylesheet" href="./../css/footer.css" />
+    <link rel="stylesheet" href="./../css/dunxintixing.css" />
+    <link rel="stylesheet" href="./../css/share.css" />
+    <link rel="stylesheet" href="./../css/search.css" />
+    <link rel="stylesheet" href="./../css/attention.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top inner clearfix">
+          <div class="lab clearfix">
+            <div>
+              <span class="iconfont icon-tixing"></span>
+            </div>
+            <div>
+              <a class="active" href="javascript:void(0)">关注</a>
+              <a href="./../pages/commend4.html">推荐</a>
+            </div>
+            <div>
+              <span class="iconfont icon-duanxin"></span>
+            </div>
+          </div>
+          <div class="search">
+            <span class="iconfont icon-search"></span>
+            <input value="大家都在搜:出租屋如何解决收纳" type="text" />
+          </div>
+          <div class="att-more">
+            <div class="clearfix">
+              <span>正在征集</span>
+              <span>查看更多></span>
+            </div>
+            <div class="att-pic">
+              <div class="clearfix">
+                <img src="./../images/att1_03.png" alt="" />
+                <img src="./../images/att2_05.png" alt="" />
+                <img src="./../images/att3.png" alt="" />
+                <img src="./../images/att1_03.png" alt="" />
+                <img src="./../images/att2_05.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="middle1 inner"></div>
+      </section>
+      <footer>
+        <div class="bottom inner clearfix">
+          <div class="comm-home">
+            <a href="./attention.html">
+              <img src="./../images/footer1.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-adorn">
+            <a href="./adorn.html">
+              <img src="./../images/footer2.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-add">
+            <a href="./add.html">
+              <img src="./../images/footer3.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-shop">
+            <a href="./shop.html">
+              <img src="./../images/footer4.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-mine">
+            <a href="./mine.html">
+              <img src="./../images/footer5.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      var attMain = [
+        {
+          portrail: "./../images/userImg1_03.png",
+          name: "慕尼的二黑",
+          mesage:
+            "不要小看厨房的面积只有20平米不到的区域，装修起来花上10W元的都有，所以厨房的装修注意点很多。首先您要确认好厨房的风格，厨房所需要的功能，是封闭式还是全开的，全开式的话不要小看厨房的面积只有20平米不到的区域，装修起来花上10W元的都有，所以厨房的装修注意点很多。首先您要确认好厨房的风格，厨房所需要的功能，是封闭式还是全开的，全开式的话",
+          imgSrc: "./../images/att4_11.jpg",
+          mesNum: 23,
+          collectNum: 225,
+          likeNum: 105
+        },
+        {
+          portrail: "./../images/att5_18.png",
+          name: "LY",
+          mesage:
+            "不要小看厨房的面积只有20平米不到的区域，装修起来花上10W元的都有，所以厨房的装修注意点很多。首先您要确认好厨房的风格，厨房所需要的功能，是封闭式还是全开的，全开式的话不要小看厨房的面积只有20平米不到的区域，装修起来花上10W元的都有，所以厨房的装修注意点很多。首先您要确认好厨房的风格，厨房所需要的功能，是封闭式还是全开的，全开式的话",
+          imgSrc: "./../images/userImg2_06.png",
+          mesNum: 11,
+          collectNum: 333,
+          likeNum: 100
+        },
+        {
+          portrail: "./../images/userImg1_03.png",
+          name: "慕尼的四黑",
+          mesage:
+            "不要小看厨房的面积只有20平米不到的区域，装修起来花上10W元的都有，所以厨房的装修注意点很多。首先您要确认好厨房的风格，厨房所需要的功能，是封闭式还是全开的，全开式的话不要小看厨房的面积只有20平米不到的区域，装修起来花上10W元的都有，所以厨房的装修注意点很多。首先您要确认好厨房的风格，厨房所需要的功能，是封闭式还是全开的，全开式的话",
+          imgSrc: "./../images/userImg2_06.png",
+          mesNum: 30,
+          collectNum: 105,
+          likeNum: 99
+        }
+      ];
+      attMain.forEach(function(obj) {
+        var mDiv = document.createElement("div");
+        document.querySelector(".middle1").appendChild(mDiv);
+        mDiv.innerHTML = `<div class="attSecPic clearfix">
+        <img src="${obj.portrail}" alt="" />
+        <span>${obj.name}</span>
+      </div>
+      <div class="attSecP">
+        <p>${obj.mesage}</p>
+      </div>
+      <div class="attSecMaxpic">
+        <img src="${obj.imgSrc}" alt="" />
+      </div>
+      <div class="attSecIcon clearfix">
+        <div class="attShare">
+          <span  class="iconfont icon-tubiao212"></span>
+        </div>
+        <div class="attStyle clearfix">
+          <div class='attSecMesage'>
+              <span class="iconfont icon-xinxi"></span>
+          <span>${obj.mesNum}</span>
+          </div>
+          <div class='attSecCollect'>
+              <span class="collect iconfont icon-collection-b"></span>
+          <span class='collNum'>${obj.collectNum}</span>
+          </div>
+          <div class='attSecLike'>
+              <span class="dianZan iconfont icon-dianzan"></span>
+          <span class='likeNum'>${obj.likeNum}</span>
+          </div>
+        </div>
+      </div>`;
+      });
+
+      // 点击变色，数字加一
+      //我用的是 判断是否有类名，
+      $(".collect").tap(function() {
+        //绑定事件
+        if ($(this).attr("class") === "collect iconfont icon-collection-b") {
+          //判断 绑定 的attr 属性中的 class 为true或者 false
+          //为 真 则是未点击前的名字状态
+          $(this).addClass("clickAgain");
+          var num =
+            $(this)
+              .siblings(".collNum")
+              .text() * 1;
+          num++;
+          $(this)
+            .siblings(".collNum")
+            .text(num);
+        } else {
+          $(this).removeClass("clickAgain");
+          var num1 =
+            $(this)
+              .siblings(".collNum")
+              .text() * 1;
+          num1--;
+          $(this)
+            .siblings(".collNum")
+            .text(num1);
+        }
+      });
+      $(".dianZan").tap(function() {
+        if ($(this).attr("class") === "dianZan iconfont icon-dianzan") {
+          $(this).addClass("clickAfter");
+          var num2 =
+            $(this)
+              .siblings(".likeNum")
+              .text() * 1;
+          num2++;
+          $(this)
+            .siblings(".likeNum")
+            .text(num2);
+        } else {
+          $(this).removeClass("clickAfter");
+          var num3 =
+            $(this)
+              .siblings(".likeNum")
+              .text() * 1;
+          num3--;
+          $(this)
+            .siblings(".likeNum")
+            .text(num3);
+        }
+      });
+    </script>
+  </body>
+</html>

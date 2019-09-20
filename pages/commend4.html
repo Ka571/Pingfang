@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>commend</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/dunxintixing.css" />
+    <link rel="stylesheet" href="./../css/search.css" />
+    <link rel="stylesheet" href="./../css/commend.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top inner clearfix">
+          <div class="lab clearfix">
+            <div>
+              <span class="iconfont icon-tixing"></span>
+            </div>
+            <div>
+              <a href="./../pages/attention.html">关注</a>
+              <a class="active" href="javascript:void(0)">推荐</a>
+            </div>
+            <div>
+              <span class="iconfont icon-duanxin"></span>
+            </div>
+          </div>
+          <div class="search">
+            <span class="iconfont icon-search"></span>
+            <input value="大家都在搜:如何更少的钱进行装修" type="text" />
+          </div>
+          <div class="more clearfix">
+            <div class="comm-produce">
+              <a href="./produce.html">
+                <img src="./../images/commend3.png" alt="" />
+                <p>智能生成</p>
+              </a>
+            </div>
+            <div class="comm-look">
+              <a href="./look.html">
+                <img src="./../images/commend1.png" alt="" />
+              </a>
+              <p>看图片</p>
+            </div>
+            <div class="comm-demo">
+              <a href="./demo.html">
+                <img src="./../images/commend2.png" alt="" />
+              </a>
+              <p>整屋案例</p>
+            </div>
+            <div class="comm-discuss">
+              <a href="./discuss.html">
+                <img src="./../images/commend4.png" alt="" />
+              </a>
+              <p>话题讨论</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="middle1 inner"></div>
+        <div class="middle2 inner"></div>
+      </section>
+      <footer>
+        <div class="bottom inner clearfix">
+          <div class="comm-home">
+            <a href="./commend4.html">
+              <img src="./../images/footer1.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-adorn">
+            <a href="./adorn.html">
+              <img src="./../images/footer2.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-add">
+            <a href="./add.html">
+              <img src="./../images/footer3.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-shop">
+            <a href="./shop.html">
+              <img src="./../images/footer4.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-mine">
+            <a href="./mine.html">
+              <img src="./../images/footer5.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script type="text/javascript">
+      var aside = [{ src: "./../images/secont.jpg" }];
+      var mDiv = document.createElement("div");
+      document.querySelector(".middle1").appendChild(mDiv);
+      mDiv.innerHTML = `<img class='aside' src="${aside[0].src}" alt="">`;
+      var main = [
+        {
+          portrail: "./../images/userImg1_03.png",
+          name: "慕尼的二黑",
+          imgSrc: "./../images/userImg2_06.png",
+          mesage:
+            "简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次"
+        },
+        {
+          portrail: "./../images/userImg1_03.png",
+          name: "慕尼的三黑",
+          imgSrc: "./../images/userImg2_06.png",
+          mesage:
+            "简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次"
+        },
+        {
+          portrail: "./../images/userImg1_03.png",
+          name: "慕尼的四黑",
+          imgSrc: "./../images/userImg2_06.png",
+          mesage:
+            "简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次"
+        }
+      ];
+      main.forEach(function(obj) {
+        var mDiv2 = document.createElement("div");
+        document.querySelector(".middle2").appendChild(mDiv2);
+        mDiv2.innerHTML = `<div class='master'><div class='clearfix'><img src="${
+          obj.portrail
+        }" alt=""><span>${
+          obj.name
+        }</span></div><div><span class='love'>关注</span></div></div><div class='pic'><img src="${
+          obj.imgSrc
+        }" alt=""></div><p class='mesage'>${obj.mesage}</p>`;
+      });
+      //点赞和取消功能
+      //判断的依据是否有第二个名字
+      $(".love").tap(function() {
+        // 未点击的情况下，只有一个名字（love），判断成立，则添加类名
+        if ($(this).attr("class") === "love") {
+          $(this).addClass("clickon");
+          $(this).text("已关注");
+        } else {
+          $(this).text("关注");
+          $(this).removeClass("clickon");
+        }
+      });
+    </script>
+  </body>
+</html>

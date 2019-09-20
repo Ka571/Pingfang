@@ -1,0 +1,33 @@
+.wrap {
+  padding: 0.5rem 0;
+  height: 100vh;
+  position: relative;
+}
+.head-Top > div:first-child span {
+  color: rgb(53, 176, 171);
+  font-size: 0.5rem;
+  display: block;
+}
+.head-Top > div:last-child p {
+  font-size: 0.5rem;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+
+/* button */
+.btn > button {
+  background-color: rgb(53, 176, 171);
+  width: 6.75rem;
+  padding: 0.1rem;
+  color: aliceblue;
+  border: none;
+  border-radius: 0.05rem;
+  display: block;
+}
+.btn {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.375rem;
+}

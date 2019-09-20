@@ -1,0 +1,124 @@
+header {
+  background-color: #072819;
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
+  overflow: hidden;
+}
+.mine-top > div:first-child {
+  padding-left: 3.375rem;
+}
+.mine-top > div:first-child > div {
+  float: left;
+  width: 0.84375rem;
+  padding: 0.2rem;
+}
+.mine-top > div:first-child > div > img {
+  width: 100%;
+  display: block;
+}
+.mine-topname {
+  display: flex;
+  align-items: center;
+}
+.mine-topname > div {
+  float: left;
+  width: 20%;
+}
+.mine-topname > div:nth-child(2) {
+  width: 30%;
+  padding-left: 0.4rem;
+}
+.mine-topname > div:last-child {
+  width: 20%;
+  text-align: right;
+  position: relative;
+  left: 0.45rem;
+}
+.mine-topname > div:nth-child(3) {
+  width: 30%;
+}
+.mine-topname > div > img {
+  width: 100%;
+  margin-right: 0.1rem;
+}
+.mine-topname span {
+  display: block;
+  font-size: 0.27rem;
+  color: rgba(186, 186, 191, 0.86);
+}
+.mine-topname > div:last-child > span {
+  background-color: #d66532;
+  padding: 0.1rem;
+  border-radius: 0.1rem;
+}
+section > .inner {
+  width: 6.75rem;
+  height: 60vh;
+  overflow: auto;
+}
+.mine-sec > div:first-child span,
+.mine-sec > div:nth-child(2) span {
+  display: block;
+  font-size: 0.3rem;
+}
+.mine-sec > div {
+  margin: 0.5rem 0;
+}
+.mine-sec > div img {
+  width: 100%;
+  display: block;
+}
+.mine-sec > div > div > div {
+  width: 19%;
+  margin: 0.2rem;
+  float: left;
+  height: 1.93rem;
+  text-align: center;
+}
+.mine-sec > div > div > div > span {
+  font-size: 0.2rem;
+}
+.minePicBox-pic {
+  width: 60%;
+  margin: 0 auto;
+  height: 1rem;
+}
+.minePicBox-pic > img {
+  width: 100%;
+}
+.mine-Ul > ul > li {
+  list-style: none;
+  padding: 0.5rem 0 0.5rem 0.3rem;
+  border-bottom: 1px solid #999;
+}
+.mine-Ul > ul > li:first-child {
+  border-top: 1px solid #999;
+}
+.mine-Ul > ul > li > span {
+  display: block;
+  float: left;
+  width: 80%;
+  font-size: 0.4rem;
+}
+.mine-Ul > ul > li > span:last-child {
+  width: 20%;
+  padding-left: 15%;
+  font-weight: bold;
+}
+.mine-end {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mine-end > div {
+  width: 20%;
+  text-align: center;
+}
+.mine-end > div > img {
+  width: 100%;
+}
+.mine-end > div > span {
+  display: block;
+  font-size: 0.3rem;
+}

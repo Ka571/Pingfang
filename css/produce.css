@@ -1,0 +1,65 @@
+.wrap {
+  width: 7.5rem;
+  height: 100vh;
+  background-color: rgba(228, 228, 228, 0.562);
+}
+.produce-inner {
+  width: 6.75rem;
+  margin: 0 auto;
+}
+.produce-inner span {
+  display: block;
+  color: rgb(17, 17, 15);
+  line-height: 0.4rem;
+  font-size: 0.3rem;
+}
+.top {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.top > div {
+  width: 50%;
+  float: left;
+}
+.top span {
+  line-height: 1rem;
+  font-weight: bold;
+  font-size: 0.37rem;
+}
+.top > div:first-child > span {
+  float: left;
+  margin-right: 10px;
+}
+.top > div:last-child {
+  text-align: right;
+}
+.middle {
+  padding-top: 0.4rem;
+}
+.middle span {
+  float: left;
+  background-color: rgb(11, 37, 6);
+  color: rgb(173, 173, 173);
+  padding: 0 0.15rem;
+  margin: 0 0.15rem 0 0;
+}
+.middle-p {
+  padding-bottom: 0.3rem;
+}
+.middle-p > span {
+  background-color: rgba(228, 228, 228, 0);
+  padding: 0;
+  margin: 0;
+  padding-top: 0.4rem;
+  line-height: 1rem;
+  font-size: 0.37rem;
+  font-weight: bold;
+}
+.middle-p > img {
+  width: 100%;
+  display: block;
+  border-left: 0.1rem solid rgba(247, 186, 54, 0.2);
+  border-radius: 5px;
+}
+.middle-s {
+  margin-bottom: 0.4rem;
+}

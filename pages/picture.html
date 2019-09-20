@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>pic</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/left.css" />
+    <link rel="stylesheet" href="./../css/xiala.css" />
+    <link rel="stylesheet" href="./../css/picture.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="inner clearfix">
+          <div>
+            <span class="back iconfont icon-left"></span>
+            <span>所有图片</span>
+            <span class="xiala iconfont icon-xial"></span>
+          </div>
+          <div>
+            <span class="next ">继续</span>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="inner">
+          <div class="big-pic">
+            <img class="datu" src="./../images/show2.jpg" alt="" />
+            <img class="amplify" src="./../images/show1_03.png" alt="" />
+          </div>
+          <div class="pic-mill">
+            <div class="clearfix">
+              <img src="./../images/show3_04.jpg" alt="" />
+              <img src="./../images/show4_06.jpg" alt="" />
+              <img src="./../images/show5_08.jpg" alt="" />
+              <img src="./../images/show6_10.jpg" alt="" />
+            </div>
+            <div class="clearfix">
+              <img src="./../images/show7_02.jpg" alt="" />
+              <img src="./../images/show8_04.jpg" alt="" />
+              <img src="./../images/show9_06.jpg" alt="" />
+              <img src="./../images/show10_08.jpg" alt="" />
+            </div>
+            <div class="clearfix">
+              <img src="./../images/show11_02.jpg" alt="" />
+              <img src="./../images/show12_02.jpg" alt="" />
+              <img src="./../images/show13_02.jpg" alt="" />
+              <img src="./../images/show14_02.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      $(".back").tap(function() {
+        history.go(-1);
+      });
+      $(".next").tap(function() {
+        location.href = "./picture2.html";
+      });
+      $(".pic-mill img").tap(function() {
+        var imgSrc = $(this).attr("src");
+        $(".datu").attr("src", imgSrc);
+      });
+    </script>
+  </body>
+</html>

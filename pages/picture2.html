@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>picture2</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/left.css" />
+    <link rel="stylesheet" href="./../css/xiala.css" />
+    <link rel="stylesheet" href="./../css/picture2.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="inner clearfix">
+          <div>
+            <span class="back iconfont icon-left"></span>
+            <span>所有图片</span>
+            <span class="xiala iconfont icon-xial"></span>
+          </div>
+          <div>
+            <span class="next">继续</span>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="inner">
+          <div class="big-pic">
+            <img src="./../images/show2.jpg" alt="" />
+            <span class="label">添加标签</span>
+          </div>
+          <div class="pic-article">
+            <p>点击图片任意位置添加图片</p>
+            <p>添加图片后，你的图片会更容易被人发现</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      $(".back").tap(function() {
+        history.go(-1);
+      });
+      $(".next").tap(function() {
+        location.href = "./picture3.html";
+      });
+    </script>
+  </body>
+</html>

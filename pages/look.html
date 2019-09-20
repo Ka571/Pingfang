@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>look</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/left.css" />
+    <link rel="stylesheet" href="./../css/sea-chang.css" />
+    <link rel="stylesheet" href="./../css/share.css" />
+    <link rel="stylesheet" href="./../css/look.css" />
+    <link rel="stylesheet" href="./../css/footer.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="look-t inner clearfix">
+          <div class="clearfix">
+            <span class="lBack iconfont icon-left"></span>
+            <span>看图片</span>
+          </div>
+          <div>
+            <span class="iconfont icon-sousuo"></span>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="inner">
+          <div class="middle1">
+            <div class="clearfix">
+              <span class="spanBG">全部</span>
+              <span>客厅</span>
+              <span>餐厅</span>
+              <span>卧室</span>
+              <span>书房</span>
+              <span>厨房</span>
+              <span>卫生间</span>
+              <span>玄关</span>
+              <span>房顶</span>
+              <span>卫生间</span>
+            </div>
+            <div class="clearfix">
+              <span class="spanBG">全部</span>
+              <span>北欧</span>
+              <span>日式</span>
+              <span>美式</span>
+              <span>中式</span>
+              <span>现代</span>
+              <span>欧式</span>
+              <span>复古</span>
+              <span>现代</span>
+              <span>欧式</span>
+              <span>复古</span>
+            </div>
+          </div>
+          <div class="middle2 clearfix">
+            <div class="mCard-l"></div>
+            <div class="mCard-R"></div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="bottom inner clearfix">
+          <div class="comm-home">
+            <a href="./commend4.html">
+              <img src="./../images/footer1.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-adorn">
+            <a href="./adorn.html">
+              <img src="./../images/footer2.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-add">
+            <a href="./add.html">
+              <img src="./../images/footer3.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-shop">
+            <a href="./shop.html">
+              <img src="./../images/footer4.png" alt="" />
+            </a>
+          </div>
+          <div class="comm-mine">
+            <a href="./mine.html">
+              <img src="./../images/footer5.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      var midL = [
+        {
+          imgSrc: "./../images/tu1.png",
+          mesage:
+            "室内装饰材料的选择，主要是分高低档，但无论是高档还是抵挡，最好都能够格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次",
+          portrail: "./../images/userImg1_03.png",
+          name: "慕尼的二黑",
+          dzNum: 1124
+        },
+        {
+          imgSrc: "./../images/tu3.jpg",
+          mesage:
+            "室内装饰材料的选择，主要是分高低档，但无论是高档还是抵挡，最好都能够简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次",
+          portrail: "./../images/userImg1_03.png",
+          name: "小路飞",
+          dzNum: 0
+        },
+        {
+          imgSrc: "./../images/tu5.png",
+          mesage:
+            "室内装饰材料的选择，主要是分高低档，但无论是高档还是抵挡，最好都能够简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次",
+          portrail: "./../images/userImg1_03.png",
+          name: "小黑子",
+          dzNum: 22
+        }
+      ];
+      var midR = [
+        {
+          imgSrc: "./../images/tu2.png",
+          mesage:
+            "普通装修肯定要采用一下普通的装饰材料，卧室，客厅，阳台的一下公共的地方简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简约风格如何打造",
+          portrail: "./../images/footer5.png",
+          name: "秦皇没有岛",
+          dzNum: 666
+        },
+        {
+          imgSrc: "./../images/tu4.jpg",
+          mesage:
+            "普通装修肯定要采用一下普通的装饰材料，卧室，客厅，阳台的一下公共的地方简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简",
+          portrail: "./../images/footer5.png",
+          name: "世纪海洋",
+          dzNum: 1154
+        },
+        {
+          imgSrc: "./../images/tu6.png",
+          mesage:
+            "普通装修肯定要采用一下普通的装饰材料，卧室，客厅，阳台的一下公共的地方简约风格如何打造空间的质感和色彩层次,简约风格如何打造空间的质感和色彩层次,简",
+          portrail: "./../images/footer5.png",
+          name: "森林逸城",
+          dzNum: 1162
+        }
+      ];
+      midL.forEach(function(obj) {
+        var mDiv = document.createElement("div");
+        document.querySelector(".mCard-l").appendChild(mDiv);
+        mDiv.innerHTML = `
+        <div class="card-top">
+          <img src="${obj.imgSrc}" alt="" />
+        </div>
+        <div class="card-middle">
+          <p>${obj.mesage}</p>
+        </div>
+        <div class="card-bottom clearfix">
+          <div class="clearfix">
+            <img src="${obj.portrail}" alt="" />
+            <span>${obj.name}</span>
+          </div>
+          <div class="clearfix">
+            <span class="dz iconfont icon-dianzan"></span>
+            <span>${obj.dzNum}</span>
+          </div>
+        </div>`;
+      });
+      midR.forEach(function(obj) {
+        var mDiv = document.createElement("div");
+        document.querySelector(".mCard-R").appendChild(mDiv);
+        mDiv.innerHTML = `
+        <div class="card-top">
+          <img src="${obj.imgSrc}" alt="" />
+        </div>
+        <div class="card-middle">
+          <p>${obj.mesage}</p>
+        </div>
+        <div class="card-bottom clearfix">
+          <div class="clearfix">
+            <img src="${obj.portrail}" alt="" />
+            <span>${obj.name}</span>
+          </div>
+          <div class="clearfix">
+            <span class="dz iconfont icon-dianzan"></span>
+            <span>${obj.dzNum}</span>
+          </div>
+        </div>`;
+      });
+      $(".lBack").tap(function() {
+        history.go(-1);
+      });
+      $(".dz").tap(function() {
+        if ($(this).attr("class") === "dz iconfont icon-dianzan") {
+          $(this).addClass("spanClickbg");
+          var spanClicnum =
+            $(this)
+              .siblings("span")
+              .text() * 1;
+          spanClicnum++;
+          $(this)
+            .siblings("span")
+            .text(spanClicnum);
+        } else {
+          $(this).removeClass("spanClickbg");
+          var spanClicnum1 =
+            $(this)
+              .siblings("span")
+              .text() * 1;
+          spanClicnum1--;
+          $(this)
+            .siblings("span")
+            .text(spanClicnum1);
+        }
+      });
+    </script>
+  </body>
+</html>

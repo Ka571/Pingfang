@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>produce</title>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="./../css/left.css" />
+    <link rel="stylesheet" href="./../css/public.css" />
+    <link rel="stylesheet" href="./../css/produce.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="produce-inner">
+        <div class="top clearfix">
+          <div class="clearfix">
+            <span class="back iconfont icon-left"></span>
+            <span>智能生成</span>
+          </div>
+          <div>
+            <span class="iconfont icon-scan"></span>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="middle-t clearfix">
+            <span>简约</span>
+            <span>北欧</span>
+            <span>铁艺</span>
+            <span>添加关键字</span>
+          </div>
+          <div class="middle-p">
+            <span>生成结果</span>
+            <img src="./../images/tu1.png" alt="" />
+          </div>
+          <div class="clearfix middle-s">
+            <span>简约</span>
+            <span>中式</span>
+            <span>日式</span>
+            <span>美式</span>
+            <span>复古</span>
+            <span>现代</span>
+          </div>
+          <div class="clearfix">
+            <span>工业</span>
+            <span>没词了</span>
+            <span>xxx</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./../js/zepto.min.js"></script>
+    <script src="./../js/touch.js"></script>
+    <script>
+      $('.back').tap(function () {
+        history.go(-1)
+      })
+    </script>
+  </body>
+</html>

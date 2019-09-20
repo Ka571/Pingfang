@@ -1,0 +1,110 @@
+div {
+}
+
+span,
+p {
+  color: rgba(94, 91, 91, 0.986);
+}
+.wrap {
+  width: 7.5rem;
+  background-color: rgba(214, 211, 211, 0.3);
+}
+.look-t {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(70, 68, 68, 0.3);
+}
+.look-t > div {
+  float: left;
+  width: 50%;
+}
+.look-t > div > span {
+  display: block;
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+.look-t > div:first-child > span {
+  float: left;
+  margin-right: 0.3rem;
+}
+.look-t > div:last-child {
+  text-align: right;
+}
+.look-t > div:last-child > span {
+  font-size: 0.5rem;
+}
+.middle1 {
+  overflow: auto;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(70, 68, 68, 0.3);
+}
+.middle1 > div {
+  width: 10rem;
+  margin-top: 0.3rem;
+}
+.middle1 > div > span {
+  display: block;
+  float: left;
+  font-size: 0.3rem;
+  margin-right: 0.2rem;
+}
+.spanBG {
+  padding: 0 0.15rem;
+  border-radius: 0.2rem;
+  color: aliceblue;
+  background-color: rgba(5, 43, 4, 0.753);
+}
+section {
+  width: 7.5rem;
+  height: 80vh;
+  overflow: auto;
+}
+.mCard-l,
+.mCard-R {
+  width: 50%;
+  float: left;
+}
+.middle2 {
+  padding-top: 0.3rem;
+}
+.middle2 > div {
+  padding: 0 0.1rem;
+}
+.card-top > img {
+  width: 100%;
+}
+.card-middle > p {
+  font-size: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.card-bottom > div,
+.card-bottom > div > img,
+.card-bottom > div > span {
+  float: left;
+  line-height: 1rem;
+  display: block;
+}
+.card-bottom > div {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.card-bottom > div:last-child {
+  width: 30%;
+}
+.card-bottom > div > img {
+  width: 20%;
+  margin-right: 0.15rem;
+}
+.card-bottom > div > span {
+  font-size: 0.2rem;
+}
+.card-bottom > div:last-child > span:first-child {
+  margin-right: 0.1rem;
+}
+.spanClickbg {
+  color: rgba(64, 64, 226, 0.925);
+}
